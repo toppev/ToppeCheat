@@ -1,0 +1,21 @@
+name: ToppeCheat
+version: 2.0
+main: com.toppecraft.toppecheat.ToppeCheat
+description: Anticheat plugin by Toppe5
+author: Toppe5
+commands:
+  alerts:
+    permission: toppecheat.notify
+    aliases: [notify, notifications]
+  stafftools:
+    permission: toppecheat.stafftools
+  autoban:
+    permission: toppecheat.stafftools
+  checks:
+    permission: toppecheat.stafftools
+  playerinfo:
+    permission: toppecheat.stafftools
+    aliases: [pinfo, tcinfo]
+  report:
+    usage: '&c/report <player> <reason>'
+    aliases: [hacker, badstaff, badanticheat, hax, hacks]

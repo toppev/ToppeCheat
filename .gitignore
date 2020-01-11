@@ -1,0 +1,9 @@
+/settings.yml
+.idea
+.project
+.settings
+.classpath
+bin
+target
+*.iml
+*.ini

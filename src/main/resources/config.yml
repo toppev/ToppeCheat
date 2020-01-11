@@ -1,0 +1,54 @@
+max-lag: 40
+max-packet-delay: 250
+violation-expiration: 20
+report-cooldown-time: 120
+alert-after-reports: 5
+notify-all-reports: true
+#Less accurate, but should be enough accurate for all checks
+#Set this to true if you want better performance ;)
+#Aimbot and killaura_look checks use this a lot
+fast-math: false
+pastebin-api-key:
+mysql:
+  enabled: false
+  host: localhost
+  port: 3306
+  user: root
+  password: ToppeCheat4ever
+  name: tac
+playerdata:
+  notes-on-join: true
+  alts-on-join: true
+autoban:
+  command: 'ban <player> cheating'
+  broadcast: true
+  broadcast-message: '&c&lTAC &6&lhas detected &c&l<player> &6&Lcheating and autobanned them from the server!'
+  lightning: true
+disabled-modifications:
+  smartmoving: true
+automute:
+  notify-when-staff-bypass: true
+  filters:
+    spam:
+      enabled: true
+      time: 120
+      reason: spamming
+      min-message-length: 5
+      history-length: 10
+      mute-level: 3
+    bad-words:
+      enabled: true
+      time: 60
+      reason: bad words/bad sportsmanship
+      blacklisted-words:
+        - ' fuck '
+        - ' ez '
+        - ' rekt '
+      mute-level: 1
+    caps:
+      enabled: true
+      time: 120
+      reason: too much caps
+      max-upper-case-percentage: 50
+      min-message-length: 10
+      mute-level: 3
